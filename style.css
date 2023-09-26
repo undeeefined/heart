@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #08415C;
+}
+
+button{
+  font-size: 300px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button:hover{
+  text-shadow: -4px 0 blue, 4px blue 0, 4px 0 blue, -4px 0 blue;
+}
+button:hover p{
+  display: flex;
+  font-size: 30px; width: 300px;
+  height: 50px;
+  text-shadow: -1px 0 white, 1px white 0, 1px 0 white, -1px 0 white;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 59%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+p{
+  display: none;
+
+}
+
+
+.heart{
+  position: fixed;
+  top: -1vh;
+  font-size: 20px;
+  animation: heartrain 2s linear forwards;
+  transition: transform 3s;
+}
+
+@keyframes heartrain {
+  to{
+    transform: translateY(105vh);
+  }
+}
